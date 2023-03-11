@@ -1,0 +1,23 @@
+Brief description of ninapro dataset:- The data set consists of 52 class hand movements obtained from 27 subjects. The data set is subdivided into three exercise categories as given in table 1
+
+Table 1:- Table providing no of classes in each exercise
+Exercise No of classes  Label               Gesture
+                        0                     Rest
+E1          12          1-12            Individual finger extension or flexion
+E2          17          13-20,20-29,  Isometric and isotonic configurations, Wrist movements
+E3          23          30-52           Grasps and functional movements
+
+
+The ninapro folder contains 27 sub folders with naming S1,S2,...S27. Each folder consists of 3 mat files S1_A1_E1.mat, S2_A1_E2.mat and S3_A1_E3.mat.
+
+Each exercise.mat file is a structure consisting  of  the following fields namely emg and stimulus, repetition and exercise number
+
+The emg structure consists of 10 channel semg data obtained from ottobock sEMG sensors 
+
+The stimulus consists of the class label (1-12 for E1, 1-17 for E2 and 1-23 for E3)  corresponding to each class of data
+
+The repetition field consists of the number of trails (10) each activity is performed 
+
+Each activity is performed for a duration of 5s, and sampling frequency is 100Hz. Hence the trail length is considered as 513 samples
+ 
+The total number of samples are 14,040 (27*52*10)
